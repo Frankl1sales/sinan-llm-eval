@@ -1,0 +1,4 @@
+comparison,n_models,spearman_rho,spearman_p,kendall_tau,kendall_p
+N1 vs N2,7,0.8571,0.0137,0.7143,0.0302
+N2 vs N3,7,0.8571,0.0137,0.7143,0.0302
+CSV vs MD (N1),7,0.8571,0.0137,0.7143,0.0302

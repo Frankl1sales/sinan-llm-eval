@@ -1,0 +1,35 @@
+\begin{table}[htbp]
+\centering
+\caption{Generalizability Theory (Method-of-Moments) variance decomposition, generalizability coefficients ($E\rho^2$, 95\% item-bootstrap CI), and model rank correlations.}
+\label{tab:gtheory_variance}
+\begin{tabular}{lrr}
+\toprule
+Source of Variance & $\hat{\sigma}^2$ & \% of Total \\
+\midrule
+Model ($m$) & 0.02610 & 9.98\% \\
+Item ($i$) & 0.02719 & 10.40\% \\
+Regime ($r$) & 0.01303 & 4.98\% \\
+Format ($f$) & 0.00231 & 0.88\% \\
+Model $\times$ Item ($m \times i$) & 0.03913 & 14.96\% \\
+Model $\times$ Regime ($m \times r$) & 0.00973 & 3.72\% \\
+Residual ($e$) & 0.14404 & 55.08\% \\
+\midrule
+\textbf{Total} & \textbf{0.26153} & \textbf{100.00\%} \\
+\midrule
+\multicolumn{3}{l}{\textbf{Generalizability Coefficient ($E\rho^2$, $n=36$ items)}} \\
+Scope & $E\rho^2$ & 95\% Bootstrap CI \\
+\midrule
+Overall & 0.8484 & [0.7100, 0.9072] \\
+N1 & 0.8255 & [0.7136, 0.9127] \\
+N2 & 0.9352 & [0.9088, 0.9605] \\
+N3 & 0.9578 & [0.9420, 0.9739] \\
+\midrule
+\multicolumn{3}{l}{\textbf{Cross-Condition Model Rank Correlations ($N=7$ models)}} \\
+Comparison & Spearman $\rho_s$ ($p$) & Kendall $\tau$ ($p$) \\
+\midrule
+N1 vs N2 & 0.857 (0.014) & 0.714 (0.030) \\
+N2 vs N3 & 0.857 (0.014) & 0.714 (0.030) \\
+CSV vs MD (N1) & 0.857 (0.014) & 0.714 (0.030) \\
+\bottomrule
+\end{tabular}
+\end{table}

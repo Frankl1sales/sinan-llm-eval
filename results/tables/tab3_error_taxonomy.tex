@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+\centering
+\caption{Error taxonomy distribution (\%) across models and regimes (N1: zero-shot, N2: 1-shot Pandas tool, N3: self-repair).}
+\label{tab:error_taxonomy}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\toprule
+Model & Regime & $N$ & Correct (\%) & Noisy (\%) & Silent (\%) & Arith./Reason. (\%) & Parse/Empty (\%) \\
+\midrule
+\texttt{qwen2.5:0.5b} & N1 & 216 & 24.1 & 0.0 & 0.0 & 70.4 & 5.6 \\
+\texttt{qwen2.5:0.5b} & N2 & 108 & 10.2 & 72.2 & 17.6 & 0.0 & 0.0 \\
+\texttt{qwen2.5:0.5b} & N3 & 108 & 11.1 & 71.3 & 17.6 & 0.0 & 0.0 \\
+\texttt{qwen2.5:1.5b} & N1 & 216 & 26.9 & 0.0 & 0.0 & 71.8 & 1.4 \\
+\texttt{qwen2.5:1.5b} & N2 & 108 & 49.1 & 9.3 & 26.9 & 0.0 & 14.8 \\
+\texttt{qwen2.5:1.5b} & N3 & 108 & 50.0 & 6.5 & 28.7 & 0.0 & 14.8 \\
+\texttt{qwen2.5:3b} & N1 & 216 & 31.9 & 0.0 & 0.0 & 56.9 & 11.1 \\
+\texttt{qwen2.5:3b} & N2 & 108 & 46.3 & 39.8 & 11.1 & 0.0 & 2.8 \\
+\texttt{qwen2.5:3b} & N3 & 108 & 71.3 & 5.6 & 20.4 & 0.0 & 2.8 \\
+\texttt{qwen2.5:7b} & N1 & 216 & 48.6 & 0.0 & 0.0 & 47.2 & 4.2 \\
+\texttt{qwen2.5:7b} & N2 & 108 & 74.1 & 14.8 & 5.6 & 0.0 & 5.6 \\
+\texttt{qwen2.5:7b} & N3 & 108 & 84.3 & 3.7 & 6.5 & 0.0 & 5.6 \\
+\texttt{qwen2.5-coder:7b-instruct-q4\_K\_M} & N1 & 216 & 54.2 & 0.0 & 0.0 & 45.8 & 0.0 \\
+\texttt{qwen2.5-coder:7b-instruct-q4\_K\_M} & N2 & 108 & 82.4 & 0.0 & 13.0 & 0.0 & 4.6 \\
+\texttt{qwen2.5-coder:7b-instruct-q4\_K\_M} & N3 & 108 & 82.4 & 0.0 & 13.0 & 0.0 & 4.6 \\
+\texttt{llama3.2:3b} & N1 & 216 & 50.5 & 0.0 & 0.0 & 42.6 & 6.9 \\
+\texttt{llama3.2:3b} & N2 & 108 & 61.1 & 11.1 & 23.1 & 0.0 & 4.6 \\
+\texttt{llama3.2:3b} & N3 & 108 & 66.7 & 3.7 & 25.0 & 0.0 & 4.6 \\
+\texttt{mistral:7b} & N1 & 216 & 46.8 & 0.0 & 0.0 & 42.6 & 10.6 \\
+\texttt{mistral:7b} & N2 & 108 & 65.7 & 23.1 & 7.4 & 0.0 & 3.7 \\
+\texttt{mistral:7b} & N3 & 108 & 73.1 & 14.8 & 7.4 & 0.0 & 4.6 \\
+\midrule
+\textbf{Overall} & N1 & 1512 & 40.4 & 0.0 & 0.0 & 53.9 & 5.7 \\
+\textbf{Overall} & N2 & 756 & 55.6 & 24.3 & 14.9 & 0.0 & 5.2 \\
+\textbf{Overall} & N3 & 756 & 62.7 & 15.1 & 16.9 & 0.0 & 5.3 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

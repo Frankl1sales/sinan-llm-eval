@@ -1,0 +1,23 @@
+# Heavy raw/processed binary microdata (reproducible via `make data`)
+data/raw/*.parquet
+data/processed/*.parquet
+
+# Temporary smoke-test outputs & runtime logs
+data/outputs/quickstart_responses.jsonl
+results/logs/*.log
+
+# Python / Jupyter / pytest caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Secrets / local environment overrides
+.env
+.env.*
+.DS_Store

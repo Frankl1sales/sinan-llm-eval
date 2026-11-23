@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{CPU-only (\texttt{num\_gpu=0}) efficiency benchmark on 10 monthly SINAN items across Qwen2.5 model scales and regimes.}
+\label{tab:cpu_efficiency}
+\begin{tabular}{llrrrrr}
+\toprule
+Model & Regime & Accuracy (\%) & Mean Lat. (s) & Peak RAM (MB) & Eval Tok. & Time/Correct (s) \\
+\midrule
+\texttt{qwen2.5:0.5b} & N1 & 20.0 & 0.38 & 4300 & 5.1 & 1.90 \\
+\texttt{qwen2.5:0.5b} & N2 & 0.0 & 2.35 & 4379 & 125.7 & -- \\
+\texttt{qwen2.5:0.5b} & N3 & 0.0 & 4.53 & 4379 & 205.4 & -- \\
+\texttt{qwen2.5:1.5b} & N1 & 30.0 & 0.74 & 5529 & 5.9 & 2.47 \\
+\texttt{qwen2.5:1.5b} & N2 & 70.0 & 2.95 & 5596 & 73.7 & 4.21 \\
+\texttt{qwen2.5:1.5b} & N3 & 70.0 & 3.53 & 5596 & 84.2 & 5.04 \\
+\texttt{qwen2.5:3b} & N1 & 30.0 & 1.12 & 6470 & 5.3 & 3.74 \\
+\texttt{qwen2.5:3b} & N2 & 50.0 & 3.29 & 6561 & 43.1 & 6.58 \\
+\texttt{qwen2.5:3b} & N3 & 70.0 & 6.21 & 6561 & 79.1 & 8.87 \\
+\texttt{qwen2.5:7b} & N1 & 50.0 & 3.71 & 6561 & 12.1 & 7.42 \\
+\texttt{qwen2.5:7b} & N2 & 90.0 & 7.59 & 6080 & 49.5 & 8.43 \\
+\texttt{qwen2.5:7b} & N3 & 90.0 & 7.59 & 6080 & 49.5 & 8.43 \\
+\bottomrule
+\end{tabular}
+\end{table}

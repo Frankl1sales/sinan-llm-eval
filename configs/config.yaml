@@ -1,0 +1,67 @@
+experiment:
+  name: "sinan_llm_measurement_v2"
+  seeds: [42, 43, 44]
+  n_repetitions: 3
+
+data:
+  disease: "CHIK"
+  year: 2024
+  state: "31"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+
+llm:
+  provider: "ollama"
+  models:
+    - "qwen2.5:0.5b"
+    - "qwen2.5:1.5b"
+    - "qwen2.5:3b"
+    - "qwen2.5:7b"
+    - "qwen2.5-coder:7b-instruct-q4_K_M"
+    - "llama3.2:3b"
+    - "mistral:7b"
+  temperature: 0.3
+  max_tokens: 512
+  timeout: 120
+  sandbox_timeout: 5
+
+regimes:
+  - "N1"
+  - "N2"
+  - "N3"
+
+formats:
+  - "csv"
+  - "markdown"
+
+cpu_bench:
+  models:
+    - "qwen2.5:0.5b"
+    - "qwen2.5:1.5b"
+    - "qwen2.5:3b"
+    - "qwen2.5:7b"
+  qids:
+    - "Q01"
+    - "Q02"
+    - "Q03"
+    - "Q04"
+    - "Q06"
+    - "Q07"
+    - "Q10"
+    - "Q11"
+    - "Q13"
+    - "Q15"
+  regimes:
+    - "N1"
+    - "N2"
+    - "N3"
+  seed: 42
+  max_tokens: 256
+
+outputs:
+  responses: "data/outputs/responses_v2.jsonl"
+  cpu_bench: "data/outputs/cpu_bench.jsonl"
+  accuracy: "results/tables/accuracy.csv"
+  gtheory: "results/tables/gtheory.csv"
+  tables_dir: "results/tables"
+  figures: "results/figures"

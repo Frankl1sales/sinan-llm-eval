@@ -1,0 +1,15 @@
+model,format,n,n_correct,accuracy,ci_low,ci_high
+qwen2.5:0.5b,csv,108,25,0.2315,0.1574,0.3148
+qwen2.5:0.5b,markdown,108,27,0.25,0.1759,0.3426
+qwen2.5:1.5b,csv,108,24,0.2222,0.1481,0.3056
+qwen2.5:1.5b,markdown,108,34,0.3148,0.2315,0.3981
+qwen2.5:3b,csv,108,39,0.3611,0.2685,0.4537
+qwen2.5:3b,markdown,108,30,0.2778,0.1944,0.3611
+qwen2.5:7b,csv,108,51,0.4722,0.3796,0.5648
+qwen2.5:7b,markdown,108,54,0.5,0.4074,0.5926
+qwen2.5-coder:7b-instruct-q4_K_M,csv,108,57,0.5278,0.435,0.6206
+qwen2.5-coder:7b-instruct-q4_K_M,markdown,108,60,0.5556,0.4627,0.6484
+llama3.2:3b,csv,108,54,0.5,0.3981,0.6019
+llama3.2:3b,markdown,108,55,0.5093,0.4074,0.6111
+mistral:7b,csv,108,53,0.4907,0.3889,0.5833
+mistral:7b,markdown,108,48,0.4444,0.3519,0.537
